@@ -34,7 +34,8 @@ public class Application extends Controller {
 	    emp.setBDate(billDate);
 	    emp.setBAmt(billAmt);
 	    emp.setBPhotopath(Photopath);
-	 
+	    System.out.println("here we are using morphia");
+	    
 	    DBObjects.datastore.save(emp);
 	    Image img=new Image();
 	    img.saveImage(Photopath);
